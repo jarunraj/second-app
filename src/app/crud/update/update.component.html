@@ -1,0 +1,26 @@
+<!-- <hr>
+<h3>Get & Update a Product</h3>
+<form (ngSubmit)="onClick()">
+    <div class="form-group">
+        <label for="">Product ID</label>
+        <br>
+        <input type="text" class="form-control" id="id"
+        [(ngModel)]="product.pid" name="id">
+    </div>
+    <button class="btn btn-success" type="Get Product">Create</button>
+</form> -->
+<form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+        <label for="">Description</label>
+        <br>
+        <input type="text" class="form-control" id="description"
+        [(ngModel)]="product.pdescription" name="description">
+        <br>
+        <label for="">Amount</label>
+        <br>
+        <input type="text" class="form-control" id="amount"
+        [(ngModel)]="product.pamount" name="amount">
+        <br>
+    </div>
+    <button class="btn btn-success" type="submit">Create</button>
+</form>

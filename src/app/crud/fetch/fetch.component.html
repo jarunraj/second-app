@@ -1,0 +1,21 @@
+<hr>
+<div>
+    <h2>Products List</h2>
+    <table border="2" style="padding: 10px;">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Description</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let product of products">
+                <td>{{product.pid}}</td>
+                <td>{{product.pdescription}}</td>
+                <td>{{product.pamount}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<hr>

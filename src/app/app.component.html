@@ -1,11 +1,5 @@
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
-<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
-<!-- * * * * * * * * * * and can be replaced.  * * * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * Delete the template below * * * * * * * * * -->
-<!-- * * * * * * * to get started with your project! * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+
 
 <style>
   :host {
@@ -226,6 +220,11 @@
         </defs>
       </svg>
       <h1>Hello, {{ title }}</h1>
+      <app-binding></app-binding>
+      <app-quickmath></app-quickmath>
+      <app-http></app-http>
+      <app-fetch></app-fetch>
+      <app-post></app-post>
       <p>Congratulations! Your app is running. 🎉</p>
     </div>
     <div class="divider" role="separator" aria-label="Divider"></div>
@@ -324,13 +323,27 @@
   </div>
 </main>
 
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * The content above * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * * -->
-<!-- * * * * * * * * * * and can be replaced.  * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * End of Placeholder  * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<router-outlet /> -->
 
 
-<router-outlet />
+
+<nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+  <ul class = "navbar-nav">
+      <li class = "nav-item">
+          <a routerLink="fetch-product" routerLinkActive="active" class="nav-link" >Home</a>
+      </li>
+      <li class = "nav-item">
+          <a routerLink="create-product" routerLinkActive="active" class="nav-link" >Add Product</a>
+      </li>
+  </ul>
+</nav>
+
+<h1 class="text-center"> {{title}} </h1>
+<div class = "container">
+  <router-outlet></router-outlet>
+</div>
+<footer class = "footer">
+  <div class = "container">
+      <span>All Rights Reserved 2024 at TCS Chennai-1 </span>
+  </div>
+</footer>

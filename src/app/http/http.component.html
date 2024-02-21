@@ -1,0 +1,21 @@
+<div>
+    <h2>Products List</h2>
+    <table border="2" style="padding: 10px;">
+        <thead>
+            <tr>
+                <th>User ID</th>
+                <th>ID</th>
+                <th>Title</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let element of data">
+                <td>{{element.userId}}</td>
+                <td>{{element.id}}</td>
+                <td>{{element.title}}</td>
+                <td>{{element.completed}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

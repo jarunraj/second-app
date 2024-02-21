@@ -1,0 +1,16 @@
+<p>quickmath works!</p>
+
+<h3>Enter 2 Numbers</h3>
+    <input type="number" [(ngModel)]="a"/><br>
+    <input type="number" [(ngModel)]="b"/>
+
+
+<h3>First Number: {{a}} Second Number: {{b}}</h3>
+
+<h3>Calculations</h3>
+    <button (click)="add(a,b)">Add</button>
+    <button (click)="subtract(a,b)">Subtract</button>
+    <button (click)="multiply(a,b)">Multiply</button>
+    <button (click)="divide(a,b)">Divide</button>
+    <h3>Result: {{result}}</h3>
+
